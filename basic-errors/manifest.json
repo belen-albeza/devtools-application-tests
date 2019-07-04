@@ -1,0 +1,12 @@
+{
+  "theme_color": 42,
+  "background_color": 42,
+  "icons": [
+    {
+      "src": "http://:Invalid",
+      "sizes": "48x48"
+    }
+  ],
+  "start_url": "bar",
+  "scope": "foo"
+}
