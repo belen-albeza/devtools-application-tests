@@ -1,0 +1,6 @@
+{
+  "name": "Foo App",
+  "short_name": "foo",
+  "background_color": "#fff",
+  "description": "A simple manifest"
+}
