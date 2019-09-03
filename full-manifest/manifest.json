@@ -1,0 +1,43 @@
+{
+  "name": "Foo App",
+  "short_name": "App",
+  "description": "This is a description",
+  "lang": "en-US",
+  "start_url": "./",
+  "scope": "./",
+  "display": "minimal-ui",
+  "orientation": "portrait-primary",
+  "theme_color": "#123456",
+  "icons": [
+    {
+      "src": "icons/device_desktop.svg",
+      "sizes": "16x16",
+      "type": "images/svg"
+    },
+    {
+      "src": "icons/device_mobile.svg",
+      "sizes": "32x32",
+      "type": "images/svg"
+    }
+    {
+      "src": "icons/device_tablet.svg",
+      "sizes": "64x64",
+      "type": "images/svg"
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "play-store",
+      "id": "com.expample.app",
+      "url": "https://play.google.com/store/apps/details?id=com.example.app1"
+    }
+  ],
+  "prefer_related_applications": true,
+  "screenshots": [
+    {
+      "src": "screenshot.png",
+      "sizes": "205x205",
+      "type": "image/png"
+    }
+  ]
+}
