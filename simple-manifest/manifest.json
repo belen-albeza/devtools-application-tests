@@ -1,6 +1,7 @@
 {
   "name": "Foo App",
   "short_name": "foo",
-  "background_color": "#fff",
+  "background_color": "white",
+  "theme_color": "rgb(69,161,255)",
   "description": "A simple manifest"
 }
