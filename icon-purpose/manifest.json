@@ -1,0 +1,12 @@
+{
+  "name": "Foo App",
+  "short_name": "foo",
+  "icons": [
+    {
+      "src": "favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any badge"
+    }
+  ]
+}
