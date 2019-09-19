@@ -1,0 +1,12 @@
+{
+  "name": "Foo App",
+  "short_name": "foo",
+  "icons": [
+    {
+      "src": "something.png",
+      "sizes": "",
+      "type": "image/png",
+      "purpose": ""
+    }
+  ]
+}
