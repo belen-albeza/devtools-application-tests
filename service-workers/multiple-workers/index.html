@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+  <title>Service Workers examples - Multiple workers</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <h1>Multiple Service Workers</h1>
+
+  <ol>
+    <li>Open the Application panel and go to the Service Workers page.</li>
+    <li>Click on this button <button id="install" type="button">Install one</button></li>
+    <li>A service worker registered under <code>service-workers/multiple-workers/</code> must appear.</li>
+    <li>Click on this button <button id="install-alt" type="button">Install another</button></li>
+    <li>Another service worker must appear with the status <code>Installed</code></li>
+    <li>Click on the <code>Unregister</code> button in the Application panel to clean up</li>
+  </ol>
+
+  <p>Note: after some time in step #4, it's normal that one of the workers disappear, and only one remains.</p>
+
+  <p><a href="../">Go back</a></p>
+
+<script>
+  document.querySelector("#install").addEventListener("click", (e) => {
+    navigator.serviceWorker.register("sw.js").then(registration => {
+      console.log("registered worker", registration);
+    });
+  }, false);
+
+  document.querySelector("#install-alt").addEventListener("click", (e) => {
+    navigator.serviceWorker.register("sw-alt.js").then(registration => {
+      console.log("registered worker", registration);
+    });
+  }, false);
+</script
+</body>
+</html>

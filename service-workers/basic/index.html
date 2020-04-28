@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+  <title>Service Workers examples - Basic</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <h1>Basic Service Worker</h1>
+  <p>Empty service worker, only gets registered.</p>
+
+  <ol>
+    <li>Open the Application panel and go to the Service Workers page.</li>
+    <li>A <q>You need to register a Service Worker</q> message will appear, with some help text.</li>
+    <li>Click on this button <button type="button" id="install">Register</button></li>
+    <li>A Service Worker registration should appear, with a matching scope (ending in <code>service-workers/basic</code>) and the <code>sw.js</code> source URL should appear</li>
+    <li>When the worker is under the status <code>Running</code>, click on the Debug button</li>
+    <li>The debugger should open. Go back to the Application panel</li>
+    <li>Click on the <code>Unregister</code> button in the Application panel to clean up</li>
+  </ol>
+
+  <p><a href="../">Go back</a></p>
+
+<script>
+  document.querySelector("#install").addEventListener("click", () => {
+    navigator.serviceWorker.register("sw.js").then(registration => {
+      console.log("registered worker", registration);
+    });
+  }, false);
+</script>
+</body>
+</html>
